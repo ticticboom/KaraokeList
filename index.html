@@ -51,13 +51,13 @@
         CsvToHtmlTable.init({
             csv_path: "data/KaraokeList.csv",
             element: "table-container",
-            allow_download: true,
+            allow_download: false,
             csv_options: {
                 separator: ",",
                 delimiter: '"'
             },
             datatables_options: {
-                paging: false
+                paging: true
             },
             custom_formatting: [
                 [4, format_link]
